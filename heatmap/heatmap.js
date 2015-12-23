@@ -150,7 +150,7 @@ var hm = {
 
 
 
-    // KEEP IDENTICAL TO project-manager method
+    // KEEP IDENTICAL TO project-manager below this
     plot: function (dom, data, domain, colors) {
         var me = this;
         var chartPanel = this.lookupReference(dom);
@@ -268,8 +268,8 @@ var hm = {
             .call(yAxis)
             .append("text")
             .attr("transform", "rotate(-90)")  // switches x and y attributes
-            .attr("y", ((-1) * axisOffsetY))            // x<->y and flipped because of rotate!
-            .attr("x", ((-1) * heatmapHeight / 2))       // x<->y and flipped because of rotate!
+            .attr("y", ((-1) * axisOffsetY))               // x<->y and flipped because of rotate!
+            .attr("x", ((-1) * heatmapHeight / 2))         // x<->y and flipped because of rotate!
             //.attr("dy", ".71em")
             .style("text-anchor", "middle")
             .text("Link index");
@@ -279,7 +279,7 @@ var hm = {
 
         // svg element full heatmap
         var heatmap = chart.append("g")
-                .attr("transform", heatmapTransform)
+                .attr("transform", heatmapTransform)        // changes in resize
                 .attr("class",css_class_drawing)
             ;
 
@@ -357,10 +357,16 @@ var hm = {
 
     }, // close plot, whew
 
+    // Resize chart (axes, heatmap) and redraw.
+    // Note: changes to data(values, numlinks, numtimes) needs a full rebuild
+    resize: function(newPanelHeight, newPanelWidth) {
 
-    // need to be able to resize yo
+    },
+
+
     makeCrosshair: function (svgElement, heatmapHeight, heatmapWidth, xScale, yScale) {
         var crosshair = {};
+        var stroke_width = 3;
 
         crosshair.elem = svgElement;
         svgElement.attr("visibility", "hidden");
@@ -411,8 +417,8 @@ var hm = {
         crosshair.resize = function(heatmapHeight, heatmapWidth, xScale, yScale) {
             this.hline.attr("x2", heatmapWidth/xScale);    // basically, numtimes!
             this.vline.attr("y2", heatmapHeight/yScale);
-            this.hline.attr("stroke-width", 3/yScale);
-            this.vline.attr("stroke-width", 3/xScale);
+            this.hline.attr("stroke-width", stroke_width/yScale);
+            this.vline.attr("stroke-width", stroke_width/xScale);
         }
         // set these the first time here
         crosshair.resize(heatmapHeight, heatmapWidth, xScale, yScale);

@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+<div id="chartContainer">
+<script src="/lib/d3.v3.4.8.js"></script>
+<script src="/dist/dimple.v2.1.6.js"></script>
+<script type="text/javascript">
+
+var data_t4367 =
+        [
+            {
+                "order": 0,
+                "linkid": -781959472,
+                "capacity": 0.5,
+                "capacityDrop": 0,
+                "congestionSpeed": 5.23076923077,
+                "criticalSpeed": 17,
+                "freeFlowSpeed": 17,
+                "jamDensity": 0.125,
+                "fundamentalDiagramType": "Triangular"
+            },
+            {
+                "order": 1,
+                "linkid": -781959471,
+                "capacity": 0.5,
+                "capacityDrop": 0,
+                "congestionSpeed": 5.23076923077,
+                "criticalSpeed": 17,
+                "freeFlowSpeed": 17,
+                "jamDensity": 0.125,
+                "fundamentalDiagramType": "Triangular"
+            },
+            {
+                "order": 2,
+                "linkid": -128822842,
+                "capacity": 0.5,
+                "capacityDrop": 0,
+                "congestionSpeed": 5.23076923077,
+                "criticalSpeed": 17,
+                "freeFlowSpeed": 17,
+                "jamDensity": 0.125,
+                "fundamentalDiagramType": "Triangular"
+            },
+            {
+                "order": 3,
+                "linkid": -128822841,
+                "capacity": 0.5,
+                "capacityDrop": 0,
+                "congestionSpeed": 5.23076923077,
+                "criticalSpeed": 17,
+                "freeFlowSpeed": 17,
+                "jamDensity": 0.125,
+                "fundamentalDiagramType": "Triangular"
+            },
+            {
+                "order": 4,
+                "linkid": -24023973,
+                "capacity": 0.5,
+                "capacityDrop": 0,
+                "congestionSpeed": 5.23076923077,
+                "criticalSpeed": 17,
+                "freeFlowSpeed": 17,
+                "jamDensity": 0.125,
+                "fundamentalDiagramType": "Triangular"
+            },
+            {
+                "order": 5,
+                "linkid": -24023978,
+                "capacity": 0.5,
+                "capacityDrop": 0,
+                "congestionSpeed": 5.23076923077,
+                "criticalSpeed": 17,
+                "freeFlowSpeed": 17,
+                "jamDensity": 0.125,
+                "fundamentalDiagramType": "Triangular"
+            },
+            {
+                "order": 6,
+                "linkid": -24023980,
+                "capacity": 0.5,
+                "capacityDrop": 0,
+                "congestionSpeed": 5.23076923077,
+                "criticalSpeed": 17,
+                "freeFlowSpeed": 17,
+                "jamDensity": 0.125,
+                "fundamentalDiagramType": "Triangular"
+            },
+            {
+                "order": 7,
+                "linkid": -781959468,
+                "capacity": 0.5,
+                "capacityDrop": 0,
+                "congestionSpeed": 5.23076923077,
+                "criticalSpeed": 17,
+                "freeFlowSpeed": 17,
+                "jamDensity": 0.125,
+                "fundamentalDiagramType": "Triangular"
+            },
+            {
+                "order": 8,
+                "linkid": -781959467,
+                "capacity": 0.5,
+                "capacityDrop": 0,
+                "congestionSpeed": 5.23076923077,
+                "criticalSpeed": 17,
+                "freeFlowSpeed": 17,
+                "jamDensity": 0.125,
+                "fundamentalDiagramType": "Triangular"
+            },
+            {
+                "order": 9,
+                "linkid": -781959464,
+                "capacity": 0.5,
+                "capacityDrop": 0,
+                "congestionSpeed": 5.23076923077,
+                "criticalSpeed": 17,
+                "freeFlowSpeed": 17,
+                "jamDensity": 0.125,
+                "fundamentalDiagramType": "Triangular"
+            },
+            {
+                "order": 10,
+                "linkid": -781959463,
+                "capacity": 0.5,
+                "capacityDrop": 0,
+                "congestionSpeed": 5.23076923077,
+                "criticalSpeed": 17,
+                "freeFlowSpeed": 17,
+                "jamDensity": 0.125,
+                "fundamentalDiagramType": "Triangular"
+            },
+            {
+                "order": 11,
+                "linkid": -781959462,
+                "capacity": 0.5,
+                "capacityDrop": 0,
+                "congestionSpeed": 5.23076923077,
+                "criticalSpeed": 17,
+                "freeFlowSpeed": 17,
+                "jamDensity": 0.125,
+                "fundamentalDiagramType": "Triangular"
+            },
+            {
+                "order": 12,
+                "linkid": -880817171,
+                "capacity": 0.5,
+                "capacityDrop": 0,
+                "congestionSpeed": 5.23076923077,
+                "criticalSpeed": 17,
+                "freeFlowSpeed": 17,
+                "jamDensity": 0.125,
+                "fundamentalDiagramType": "Triangular"
+            },
+            {
+                "order": 13,
+                "linkid": -880817172,
+                "capacity": 0.5,
+                "capacityDrop": 0,
+                "congestionSpeed": 5.23076923077,
+                "criticalSpeed": 17,
+                "freeFlowSpeed": 17,
+                "jamDensity": 0.125,
+                "fundamentalDiagramType": "Triangular"
+            },
+            {
+                "order": 14,
+                "linkid": -880817168,
+                "capacity": 0.5,
+                "capacityDrop": 0,
+                "congestionSpeed": 5.23076923077,
+                "criticalSpeed": 17,
+                "freeFlowSpeed": 17,
+                "jamDensity": 0.125,
+                "fundamentalDiagramType": "Triangular"
+            },
+            {
+                "order": 15,
+                "linkid": -880817169,
+                "capacity": 0.5,
+                "capacityDrop": 0,
+                "congestionSpeed": 5.23076923077,
+                "criticalSpeed": 17,
+                "freeFlowSpeed": 17,
+                "jamDensity": 0.125,
+                "fundamentalDiagramType": "Triangular"
+            },
+            {
+                "order": 16,
+                "linkid": -880817165,
+                "capacity": 0.5,
+                "capacityDrop": 0,
+                "congestionSpeed": 5.23076923077,
+                "criticalSpeed": 17,
+                "freeFlowSpeed": 17,
+                "jamDensity": 0.125,
+                "fundamentalDiagramType": "Triangular"
+            },
+            {
+                "order": 17,
+                "linkid": -880817166,
+                "capacity": 0.5,
+                "capacityDrop": 0,
+                "congestionSpeed": 5.23076923077,
+                "criticalSpeed": 17,
+                "freeFlowSpeed": 17,
+                "jamDensity": 0.125,
+                "fundamentalDiagramType": "Triangular"
+            },
+            {
+                "order": 18,
+                "linkid": -781984983,
+                "capacity": 0.5,
+                "capacityDrop": 0,
+                "congestionSpeed": 5.23076923077,
+                "criticalSpeed": 17,
+                "freeFlowSpeed": 17,
+                "jamDensity": 0.125,
+                "fundamentalDiagramType": "Triangular"
+            },
+            {
+                "order": 19,
+                "linkid": -781984982,
+                "capacity": 0.5,
+                "capacityDrop": 0,
+                "congestionSpeed": 5.23076923077,
+                "criticalSpeed": 17,
+                "freeFlowSpeed": 17,
+                "jamDensity": 0.125,
+                "fundamentalDiagramType": "Triangular"
+            },
+            {
+                "order": 20,
+                "linkid": -781984977,
+                "capacity": 0.5,
+                "capacityDrop": 0,
+                "congestionSpeed": 5.23076923077,
+                "criticalSpeed": 17,
+                "freeFlowSpeed": 17,
+                "jamDensity": 0.125,
+                "fundamentalDiagramType": "Triangular"
+            },
+            {
+                "order": 21,
+                "linkid": -813450043,
+                "capacity": 0.5,
+                "capacityDrop": 0,
+                "congestionSpeed": 5.23076923077,
+                "criticalSpeed": 17,
+                "freeFlowSpeed": 17,
+                "jamDensity": 0.125,
+                "fundamentalDiagramType": "Triangular"
+            },
+            {
+                "order": 22,
+                "linkid": -813450042,
+                "capacity": 0.5,
+                "capacityDrop": 0,
+                "congestionSpeed": 5.23076923077,
+                "criticalSpeed": 17,
+                "freeFlowSpeed": 17,
+                "jamDensity": 0.125,
+                "fundamentalDiagramType": "Triangular"
+            },
+            {
+                "order": 23,
+                "linkid": -781984972,
+                "capacity": 0.5,
+                "capacityDrop": 0,
+                "congestionSpeed": 5.23076923077,
+                "criticalSpeed": 17,
+                "freeFlowSpeed": 17,
+                "jamDensity": 0.125,
+                "fundamentalDiagramType": "Triangular"
+            },
+            {
+                "order": 24,
+                "linkid": -128815601,
+                "capacity": 0.5,
+                "capacityDrop": 0,
+                "congestionSpeed": 5.23076923077,
+                "criticalSpeed": 17,
+                "freeFlowSpeed": 17,
+                "jamDensity": 0.125,
+                "fundamentalDiagramType": "Triangular"
+            },
+            {
+                "order": 25,
+                "linkid": -128815600,
+                "capacity": 0.5,
+                "capacityDrop": 0,
+                "congestionSpeed": 5.23076923077,
+                "criticalSpeed": 17,
+                "freeFlowSpeed": 17,
+                "jamDensity": 0.125,
+                "fundamentalDiagramType": "Triangular"
+            },
+            {
+                "order": 26,
+                "linkid": -24024108,
+                "capacity": 0.5,
+                "capacityDrop": 0,
+                "congestionSpeed": 5.23076923077,
+                "criticalSpeed": 17,
+                "freeFlowSpeed": 17,
+                "jamDensity": 0.125,
+                "fundamentalDiagramType": "Triangular"
+            },
+            {
+                "order": 27,
+                "linkid": 908310014,
+                "capacity": 0.5,
+                "capacityDrop": 0,
+                "congestionSpeed": 5.23076923077,
+                "criticalSpeed": 17,
+                "freeFlowSpeed": 17,
+                "jamDensity": 0.125,
+                "fundamentalDiagramType": "Triangular"
+            },
+            {
+                "order": 28,
+                "linkid": 709472503,
+                "capacity": 0.5,
+                "capacityDrop": 0,
+                "congestionSpeed": 5.23076923077,
+                "criticalSpeed": 17,
+                "freeFlowSpeed": 17,
+                "jamDensity": 0.125,
+                "fundamentalDiagramType": "Triangular"
+            },
+            {
+                "order": 29,
+                "linkid": 722786351,
+                "capacity": 0.5,
+                "capacityDrop": 0,
+                "congestionSpeed": 5.23076923077,
+                "criticalSpeed": 17,
+                "freeFlowSpeed": 17,
+                "jamDensity": 0.125,
+                "fundamentalDiagramType": "Triangular"
+            },
+            {
+                "order": 30,
+                "linkid": 722786352,
+                "capacity": 0.5,
+                "capacityDrop": 0,
+                "congestionSpeed": 5.23076923077,
+                "criticalSpeed": 17,
+                "freeFlowSpeed": 17,
+                "jamDensity": 0.125,
+                "fundamentalDiagramType": "Triangular"
+            },
+            {
+                "order": 31,
+                "linkid": 128792921,
+                "capacity": 0.5,
+                "capacityDrop": 0,
+                "congestionSpeed": 5.23076923077,
+                "criticalSpeed": 17,
+                "freeFlowSpeed": 17,
+                "jamDensity": 0.125,
+                "fundamentalDiagramType": "Triangular"
+            },
+            {
+                "order": 32,
+                "linkid": 722786359,
+                "capacity": 0.5,
+                "capacityDrop": 0,
+                "congestionSpeed": 5.23076923077,
+                "criticalSpeed": 17,
+                "freeFlowSpeed": 17,
+                "jamDensity": 0.125,
+                "fundamentalDiagramType": "Triangular"
+            },
+            {
+                "order": 33,
+                "linkid": 722786360,
+                "capacity": 0.5,
+                "capacityDrop": 0,
+                "congestionSpeed": 5.23076923077,
+                "criticalSpeed": 17,
+                "freeFlowSpeed": 17,
+                "jamDensity": 0.125,
+                "fundamentalDiagramType": "Triangular"
+            },
+            {
+                "order": 34,
+                "linkid": 24577210,
+                "capacity": 0.5,
+                "capacityDrop": 0,
+                "congestionSpeed": 5.23076923077,
+                "criticalSpeed": 17,
+                "freeFlowSpeed": 17,
+                "jamDensity": 0.125,
+                "fundamentalDiagramType": "Triangular"
+            },
+            {
+                "order": 35,
+                "linkid": 24577213,
+                "capacity": 0.5,
+                "capacityDrop": 0,
+                "congestionSpeed": 5.23076923077,
+                "criticalSpeed": 17,
+                "freeFlowSpeed": 17,
+                "jamDensity": 0.125,
+                "fundamentalDiagramType": "Triangular"
+            },
+            {
+                "order": 36,
+                "linkid": 24576026,
+                "capacity": 0.5,
+                "capacityDrop": 0,
+                "congestionSpeed": 5.23076923077,
+                "criticalSpeed": 17,
+                "freeFlowSpeed": 17,
+                "jamDensity": 0.125,
+                "fundamentalDiagramType": "Triangular"
+            },
+            {
+                "order": 37,
+                "linkid": 776743501,
+                "capacity": 0.5,
+                "capacityDrop": 0,
+                "congestionSpeed": 5.23076923077,
+                "criticalSpeed": 17,
+                "freeFlowSpeed": 17,
+                "jamDensity": 0.125,
+                "fundamentalDiagramType": "Triangular"
+            },
+            {
+                "order": 38,
+                "linkid": 776743502,
+                "capacity": 0.5,
+                "capacityDrop": 0,
+                "congestionSpeed": 5.23076923077,
+                "criticalSpeed": 17,
+                "freeFlowSpeed": 17,
+                "jamDensity": 0.125,
+                "fundamentalDiagramType": "Triangular"
+            },
+            {
+                "order": 39,
+                "linkid": 776741608,
+                "capacity": 0.5,
+                "capacityDrop": 0,
+                "congestionSpeed": 5.23076923077,
+                "criticalSpeed": 17,
+                "freeFlowSpeed": 17,
+                "jamDensity": 0.125,
+                "fundamentalDiagramType": "Triangular"
+            },
+            {
+                "order": 40,
+                "linkid": 776741609,
+                "capacity": 0.5,
+                "capacityDrop": 0,
+                "congestionSpeed": 5.23076923077,
+                "criticalSpeed": 17,
+                "freeFlowSpeed": 17,
+                "jamDensity": 0.125,
+                "fundamentalDiagramType": "Triangular"
+            },
+            {
+                "order": 41,
+                "linkid": 24020013,
+                "capacity": 0.5,
+                "capacityDrop": 0,
+                "congestionSpeed": 5.23076923077,
+                "criticalSpeed": 17,
+                "freeFlowSpeed": 17,
+                "jamDensity": 0.125,
+                "fundamentalDiagramType": "Triangular"
+            },
+            {
+                "order": 42,
+                "linkid": 24019882,
+                "capacity": 0.5,
+                "capacityDrop": 0,
+                "congestionSpeed": 5.23076923077,
+                "criticalSpeed": 17,
+                "freeFlowSpeed": 17,
+                "jamDensity": 0.125,
+                "fundamentalDiagramType": "Triangular"
+            },
+            {
+                "order": 43,
+                "linkid": -128793055,
+                "capacity": 0.5,
+                "capacityDrop": 0,
+                "congestionSpeed": 4.88888888889,
+                "criticalSpeed": 22,
+                "freeFlowSpeed": 22,
+                "jamDensity": 0.125,
+                "fundamentalDiagramType": "Triangular"
+            },
+            {
+                "order": 44,
+                "linkid": -776740148,
+                "capacity": 0.5,
+                "capacityDrop": 0,
+                "congestionSpeed": 4.88888888889,
+                "criticalSpeed": 22,
+                "freeFlowSpeed": 22,
+                "jamDensity": 0.125,
+                "fundamentalDiagramType": "Triangular"
+            },
+            {
+                "order": 45,
+                "linkid": -782905071,
+                "capacity": 0.5,
+                "capacityDrop": 0,
+                "congestionSpeed": 4.88888888889,
+                "criticalSpeed": 22,
+                "freeFlowSpeed": 22,
+                "jamDensity": 0.125,
+                "fundamentalDiagramType": "Triangular"
+            },
+            {
+                "order": 46,
+                "linkid": -782905073,
+                "capacity": 0.5,
+                "capacityDrop": 0,
+                "congestionSpeed": 4.88888888889,
+                "criticalSpeed": 22,
+                "freeFlowSpeed": 22,
+                "jamDensity": 0.125,
+                "fundamentalDiagramType": "Triangular"
+            },
+            {
+                "order": 47,
+                "linkid": -782905072,
+                "capacity": 0.5,
+                "capacityDrop": 0,
+                "congestionSpeed": 4.88888888889,
+                "criticalSpeed": 22,
+                "freeFlowSpeed": 22,
+                "jamDensity": 0.125,
+                "fundamentalDiagramType": "Triangular"
+            },
+            {
+                "order": 48,
+                "linkid": -126526091,
+                "capacity": 0.5,
+                "capacityDrop": 0,
+                "congestionSpeed": 4.88888888889,
+                "criticalSpeed": 22,
+                "freeFlowSpeed": 22,
+                "jamDensity": 0.125,
+                "fundamentalDiagramType": "Triangular"
+            },
+            {
+                "order": 49,
+                "linkid": -782905075,
+                "capacity": 0.5,
+                "capacityDrop": 0,
+                "congestionSpeed": 4.88888888889,
+                "criticalSpeed": 22,
+                "freeFlowSpeed": 22,
+                "jamDensity": 0.125,
+                "fundamentalDiagramType": "Triangular"
+            },
+            {
+                "order": 50,
+                "linkid": -782905074,
+                "capacity": 0.5,
+                "capacityDrop": 0,
+                "congestionSpeed": 4.88888888889,
+                "criticalSpeed": 22,
+                "freeFlowSpeed": 22,
+                "jamDensity": 0.125,
+                "fundamentalDiagramType": "Triangular"
+            },
+            {
+                "order": 51,
+                "linkid": -24019818,
+                "capacity": 0.5,
+                "capacityDrop": 0,
+                "congestionSpeed": 4.88888888889,
+                "criticalSpeed": 22,
+                "freeFlowSpeed": 22,
+                "jamDensity": 0.125,
+                "fundamentalDiagramType": "Triangular"
+            },
+            {
+                "order": 52,
+                "linkid": -24019844,
+                "capacity": 0.5,
+                "capacityDrop": 0,
+                "congestionSpeed": 4.88888888889,
+                "criticalSpeed": 22,
+                "freeFlowSpeed": 22,
+                "jamDensity": 0.125,
+                "fundamentalDiagramType": "Triangular"
+            },
+            {
+                "order": 53,
+                "linkid": -24019854,
+                "capacity": 0.5,
+                "capacityDrop": 0,
+                "congestionSpeed": 4.88888888889,
+                "criticalSpeed": 22,
+                "freeFlowSpeed": 22,
+                "jamDensity": 0.125,
+                "fundamentalDiagramType": "Triangular"
+            },
+            {
+                "order": 54,
+                "linkid": -24019867,
+                "capacity": 0.5,
+                "capacityDrop": 0,
+                "congestionSpeed": 4.88888888889,
+                "criticalSpeed": 22,
+                "freeFlowSpeed": 22,
+                "jamDensity": 0.125,
+                "fundamentalDiagramType": "Triangular"
+            },
+            {
+                "order": 55,
+                "linkid": -782388835,
+                "capacity": 0.5,
+                "capacityDrop": 0,
+                "congestionSpeed": 4.88888888889,
+                "criticalSpeed": 22,
+                "freeFlowSpeed": 22,
+                "jamDensity": 0.125,
+                "fundamentalDiagramType": "Triangular"
+            },
+            {
+                "order": 56,
+                "linkid": -782388834,
+                "capacity": 0.4,
+                "capacityDrop": 0,
+                "congestionSpeed": 4.88888888889,
+                "criticalSpeed": 22,
+                "freeFlowSpeed": 22,
+                "jamDensity": 0.125,
+                "fundamentalDiagramType": "Triangular"
+            },
+            {
+                "order": 57,
+                "linkid": -24020159,
+                "capacity": 0.5,
+                "capacityDrop": 0,
+                "congestionSpeed": 5.23076923077,
+                "criticalSpeed": 17,
+                "freeFlowSpeed": 17,
+                "jamDensity": 0.125,
+                "fundamentalDiagramType": "Triangular"
+            }
+        ];
+
+
+</script>
+<script type="text/javascript">
+
+
+var me = {orderField: "order",
+    nameField: "linkid",
+    speedFields: ["congestionSpeed", "freeFlowSpeed", "criticalSpeed"],
+    proportionFields: ["capacity", "jamDensity", "capacityDrop"]
+};
+
+var cont_height = 350;
+var cont_width = 500;
+
+var legendHeight = 40;
+var legendChartGap = 10;
+var x_offset = 60;
+var y_offset = legendHeight + legendChartGap;
+
+var chartwidth = cont_width-x_offset;
+var chartheight = cont_height-y_offset;
+
+var x,y0,y1,y2,y3,y4,y5, s0,s1,s2,s3,s4,s5;
+
+var svg = dimple.newSvg("#chartContainer", cont_width, cont_height);
+var chart = new dimple.chart(svg, data_t4367);
+chart.setBounds(x_offset, y_offset, chartwidth, chartheight-y_offset);
+x = chart.addCategoryAxis("x", "order");
+x.addOrderRule(me.orderField);
+y0 = chart.addMeasureAxis("y", me.proportionFields[0]);
+y1 = chart.addMeasureAxis(y0, me.proportionFields[1]);
+y2 = chart.addMeasureAxis(y0, me.proportionFields[2]);
+s0 = chart.addSeries(me.proportionFields[0] + " ", dimple.plot.line, [x, y0]);
+s1 = chart.addSeries(me.proportionFields[1] + " ", dimple.plot.line, [x, y1]);
+s2 = chart.addSeries(me.proportionFields[2] + " ", dimple.plot.line, [x, y2]);
+
+y3 = chart.addMeasureAxis("y", me.speedFields[0]);
+y4 = chart.addMeasureAxis(y3, me.speedFields[1]);
+y5 = chart.addMeasureAxis(y3, me.speedFields[2]);
+chart.addSeries(me.speedFields[0] + " ", dimple.plot.line, [x, y3]);
+chart.addSeries(me.speedFields[1] + " ", dimple.plot.line, [x, y4]);
+chart.addSeries(me.speedFields[2] + " ", dimple.plot.line, [x, y5]);
+chart.addLegend(60, 10, chartwidth, legendHeight, "right");
+chart.draw();
+
+
+</script>
+</div>
+</html>
